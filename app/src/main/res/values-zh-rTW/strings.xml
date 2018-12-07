@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">小蝸牛</string>
+	<string name="browse">瀏覽</string>
+	<string name="prompt_when_exit_the_app">再按一次退出應用</string>
+</resources>

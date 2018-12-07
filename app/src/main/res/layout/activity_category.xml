@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".ui.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_activity_nav_height"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llayout_local_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="北京" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="搜索" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_nav_brawse_default" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_nav_brawse_default" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--主界面顶部栏分割线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_line_horizontal_height"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+        <!--添加各导航(navigation)界面的fragment的布局容器-->
+        <FrameLayout
+            android:id="@+id/frameLayout_fragment_container_main_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </FrameLayout>
+
+        <!--主界面底部导航栏的根布局_start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_activity_nav_height"
+            android:orientation="vertical">
+            <!--主界面底部导航栏顶部的分割线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_line_horizontal_height"
+                android:background="@color/divider_line" />
+
+            <!--主界面底部导航栏所有导航栏目的布局_start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_activity_nav_height"
+                android:orientation="horizontal">
+
+                <!--底部导航栏的"首页"的布局_start-->
+                <RelativeLayout
+                    android:id="@+id/rlayout_nav_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <!--包裹"浏览"布局的图片和文字的布局-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_nav_brawse_default" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/nav_text_image_margintop"
+                            android:text="@string/browse" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+                <!--底部导航栏的"浏览"的布局_end-->
+
+                <!--底部导航栏的""的布局-->
+                <RelativeLayout
+                    android:id="@+id/rlayout_nav_browse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <!--包裹""布局的图片和文字的布局-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_nav_brawse_default" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/nav_text_image_margintop"
+                            android:text="@string/browse" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!--底部导航栏的""的布局-->
+                <RelativeLayout
+                    android:id="@+id/rlayout_nav_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <!--包裹""布局的图片和文字的布局-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_nav_brawse_default" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/nav_text_image_margintop"
+                            android:text="@string/browse" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!--底部导航栏的""的布局-->
+                <RelativeLayout
+                    android:id="@+id/rlayout_nav_personal_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <!--包裹""布局的图片和文字的布局-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_nav_brawse_default" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/nav_text_image_margintop"
+                            android:text="@string/browse" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <!--主界面底部导航栏所有导航栏目的布局_end-->
+
+        </LinearLayout>
+        <!--主界面底部导航栏的根布局_end-->
+
+    </LinearLayout>
+
+</FrameLayout>

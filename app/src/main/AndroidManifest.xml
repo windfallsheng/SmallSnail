@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smallsnailtech.smallsnail">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".base.SupportApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.LoginActivity"></activity>
+        <activity android:name=".ui.activity.InformationDetailsActivity"></activity>
+        <activity android:name=".ui.activity.PublishInformationActivity"></activity>
+        <activity android:name=".ui.activity.SearchInformationsActivity"></activity>
+
+        <receiver android:name=".component.broadcast.AppAddAndRemoveReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".component.service.SaveInstallAppsService"
+            android:exported="false">
+            <intent-filter>
+                <!-- 自定义Service里的action -->
+                <action android:name="android.intent.action.service.INSTALL_APP" />
+                <action android:name="android.intent.action.service.UNINSTALL_APP" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

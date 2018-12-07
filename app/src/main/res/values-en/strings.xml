@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Small snail</string>
+	<string name="browse">Browse</string>
+	<string name="prompt_when_exit_the_app">Press again to exit the app</string>
+</resources>

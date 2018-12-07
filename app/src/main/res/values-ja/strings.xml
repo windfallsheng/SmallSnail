@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">小さなカタツムリ</string>
+	<string name="browse">ブラウズ</string>
+	<string name="prompt_when_exit_the_app">もう一度押してアプリを終了する</string>
+</resources>

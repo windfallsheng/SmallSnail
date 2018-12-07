@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/llayout_window_operate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageview_operate_go_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_expand_less_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageview_operate_go_forward"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageview_operate_go_to_publish"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_add_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageview_operate_go_to_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_search_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageview_operate_center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/smart_pricing_ftue" />
+
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+        android:id="@+id/llayout_window_operate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/e8e8e8">
+
+        <ImageView
+            android:id="@+id/imageview_operate_go_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_expand_less_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageview_operate_go_forward"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageview_operate_center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/smart_pricing_ftue" />
+
+        <ImageView
+            android:id="@+id/imageview_operate_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_add_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageview_operate_go_to_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_search_black_24dp" />
+
+    </RelativeLayout>-->
+</FrameLayout>
+
